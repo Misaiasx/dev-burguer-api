@@ -20,5 +20,9 @@
   "devDependencies": {
     "@biomejs/biome": "2.4.5",
     "sequelize-cli": "^6.6.5"
-  }
+  },
+  "scripts": {
+  "migration:create": "sequelize-cli migration:generate",
+  "migration:run": "sequelize-cli db:migrate"
+},
 }
